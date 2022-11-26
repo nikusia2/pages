@@ -1,0 +1,375 @@
+/* coolors.co/ea526f-070600-f7f7ff-23b5d3-279af1
+htmlcolorcodes.com/color-names */
+body {
+    font-family: 'Work Sans', sans-serif;  
+}
+
+/*header*/
+.nav {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 700px) {
+    .nav {
+        box-sizing: border-box;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  }
+.hero {
+    padding-top: 100px;
+    background-image: url("./imhero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom:100px;
+    margin-bottom: 50px;
+    height: 60vh;
+}
+.hero-content {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.all-menu {
+    margin-right: 20px;
+    font-size: 18px;
+    list-style: none;  
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.menu-link {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+ @media (max-width: 560px) {
+    .all-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    .menu-open {
+      display: flex;
+    }
+  } 
+.menu-button,
+.menu-close-button {
+    background: transparent;
+    border: none;
+}
+.menu-close-button {
+    position: fixed;
+    top: 19px;
+    right: 25px;
+    z-index: 1;
+    display: none;
+}
+
+@media (min-width: 560px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.logo {
+    margin-left: 20px;
+}
+.header {
+    margin-left: 80px;
+}
+
+.main-heading {
+    font-size: 60px;
+    color:rgb(0, 0, 0);
+}
+.header-text{
+    font-size:22px;
+}
+
+.header-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:20px;
+    padding: 10px;
+    margin: 50px;
+    background-color: rgb(94, 90, 102);
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+}
+.header-link:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+.text {
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .text {
+    margin-right: 40px;
+    margin-left: 40px;
+    }
+  }
+
+/*about me*/
+.about-header {
+    text-align: center;
+}
+.section-about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+@media (max-width: 900px) {
+    .section-about {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  .about-content {
+    max-width: 400px;
+}
+.photo-wraper {
+    position: relative;
+    max-width: 400px;
+    z-index: -1;
+}
+@media (max-width: 420px) {
+    .photo-wraper {
+        max-width: 250px;
+        align-items: center;
+    }
+    .about-content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+  }
+.photo-wraper::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    border: 10px solid black;
+    border-radius: 8px;
+    z-index: -1;
+}
+.photo-wraper::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: rgb(94, 90, 102);
+    z-index: -1;
+}
+.header-link {
+    z-index: -1;
+}
+
+/*hobby*/
+.section-hobby {
+    padding: 50px;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgba(149, 149, 226, 0.763);
+}
+.hobby-name {
+    text-transform: uppercase;
+    color: rgb(47, 1, 90);
+    font-size:22px;
+}
+.hobby-text{
+    font-size: 18px;
+}
+.hobby-item {
+    text-align: center;
+}
+@media (max-width: 900px) {
+    .section-hobby {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .hobby-text {
+        margin-left: 10%;
+        margin-right: 10%;        
+    }
+  }
+
+/*photos*/
+.section-photos {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.photos-text {
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fotos{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.photos-heading {
+    font-size: 25px;
+    text-align: center;
+}
+.figure-description {
+    font-size: 18px;
+    text-align: center;
+}
+.figure {
+    max-width: 30%;
+    margin: 0;
+}
+.figure-image {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+@media (max-width: 1080px) {
+    .figure {
+        max-width: 40%;
+    }
+}
+@media (max-width: 800px) {
+    .figure {
+        max-width: 90%;
+    }
+}
+/*guote*/
+.section-quote {
+    padding: 40px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(149, 149, 226, 0.763);
+    font-family: 'Playfair Display', serif;
+}
+.guote {
+    font-size: 22px;
+    text-align: center;
+}
+.skam {
+    text-align: right;
+    font-size: 15px;
+}
+
+/*form*/
+.section-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+.form-heading {
+    text-align: center;
+}
+.form-example {
+    border: none;
+    display: block;
+    align-items: center;
+}
+.label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input {
+    width: 100%;
+    padding: 5px;
+    border: 1px soild rgba(149, 149, 226, 0.763);
+    border-radius: 4px;
+}
+.input:focus {
+    border: 2px solid rgb(47, 1, 90);
+    outline: none;
+}
+.form-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:15px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 85%;
+    background-color: rgb(94, 90, 102);
+    border-radius: 5px; 
+}
+.form-button:focus {
+    background-color: black;
+    transition: 0.3s;
+}
+.form-button:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+.form-button-center {
+    display: block;
+    margin-left: 100%;
+}
+
+/*footer*/
+.footer {
+    padding: 10px;
+    background-color: rgba(149, 149, 226, 0.763);
+}
+.footer-content {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;    
+}
+.footer-icons {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;  
+}
+
+@media (max-width: 500px) {
+    .footer-content {
+        font-size: 13px;
+    }
+  }
